@@ -1,0 +1,35 @@
+{
+  "name": "rb-styleguides",
+  "version": "0.0.0",
+  "authors": [
+    "Sirna"
+  ],
+  "description": "Styleguides for ReadingBulb",
+  "main": "app/script/app.js",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "readingbulb"
+  ],
+  "license": "Proprietary",
+  "homepage": "http://zabkasirna.github.io/rb-styleguides",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3",
+    "lodash": "~3.8.0",
+    "fontawesome": "~4.3.0",
+    "hammer.js": "~2.0.4",
+    "jquery.hammer.js": "~2.0.0",
+    "hammer-touchemulator": "~0.0.2",
+    "materialize": "~0.96.1"
+  }
+}
