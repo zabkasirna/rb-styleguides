@@ -2,24 +2,24 @@ $font-url: 'font/';
 
 // SANS
 
-@include s-font-face( 'SansRegular', 'Graphik-Regular', $font-url, 400, normal );
-@include s-font-face( 'SansRegularItalic', 'Graphik-RegularItalic', $font-url, 400, normal );
-@include s-font-face( 'SansBlack', 'Graphik-Black', $font-url, 400, normal );
-@include s-font-face( 'SansBlackItalic', 'Graphik-BlackItalic', $font-url, 400, normal );
-@include s-font-face( 'SansBold', 'Graphik-Bold', $font-url, 400, normal );
-@include s-font-face( 'SansBoldItalic', 'Graphik-BoldItalic', $font-url, 400, normal );
-@include s-font-face( 'SansExtraLight', 'Graphik-ExtraLight', $font-url, 400, normal );
-@include s-font-face( 'SansExtraLightItalic', 'Graphik-ExtraLightItalic', $font-url, 400, normal );
-@include s-font-face( 'SansLight', 'Graphik-Light', $font-url, 400, normal );
-@include s-font-face( 'SansLightItalic', 'Graphik-LightItalic', $font-url, 400, normal );
-@include s-font-face( 'SansMedium', 'Graphik-Medium', $font-url, 400, normal );
-@include s-font-face( 'SansMediumItalic', 'Graphik-MediumItalic', $font-url, 400, normal );
-@include s-font-face( 'SansSemiBold', 'Graphik-SemiBold', $font-url, 400, normal );
-@include s-font-face( 'SansSemiBoldItalic', 'Graphik-SemiBoldItalic', $font-url, 400, normal );
-@include s-font-face( 'SansSuper', 'Graphik-Super', $font-url, 400, normal );
-@include s-font-face( 'SansSuperItalic', 'Graphik-SuperItalic', $font-url, 400, normal );
-@include s-font-face( 'SansThin', 'Graphik-Thin', $font-url, 400, normal );
-@include s-font-face( 'SansThinItalic', 'Graphik-ThinItalic', $font-url, 400, normal );
+@include s-font-face( 'SansRegular', 'Graphik-Regular', $font-url, normal, normal );
+@include s-font-face( 'SansRegularItalic', 'Graphik-RegularItalic', $font-url, normal, normal );
+@include s-font-face( 'SansBlack', 'Graphik-Black', $font-url, normal, normal );
+@include s-font-face( 'SansBlackItalic', 'Graphik-BlackItalic', $font-url, normal, normal );
+@include s-font-face( 'SansBold', 'Graphik-Bold', $font-url, normal, normal );
+@include s-font-face( 'SansBoldItalic', 'Graphik-BoldItalic', $font-url, normal, normal );
+@include s-font-face( 'SansExtraLight', 'Graphik-ExtraLight', $font-url, normal, normal );
+@include s-font-face( 'SansExtraLightItalic', 'Graphik-ExtraLightItalic', $font-url, normal, normal );
+@include s-font-face( 'SansLight', 'Graphik-Light', $font-url, normal, normal );
+@include s-font-face( 'SansLightItalic', 'Graphik-LightItalic', $font-url, normal, normal );
+@include s-font-face( 'SansMedium', 'Graphik-Medium', $font-url, normal, normal );
+@include s-font-face( 'SansMediumItalic', 'Graphik-MediumItalic', $font-url, normal, normal );
+@include s-font-face( 'SansSemiBold', 'Graphik-SemiBold', $font-url, normal, normal );
+@include s-font-face( 'SansSemiBoldItalic', 'Graphik-SemiBoldItalic', $font-url, normal, normal );
+@include s-font-face( 'SansSuper', 'Graphik-Super', $font-url, normal, normal );
+@include s-font-face( 'SansSuperItalic', 'Graphik-SuperItalic', $font-url, normal, normal );
+@include s-font-face( 'SansThin', 'Graphik-Thin', $font-url, normal, normal );
+@include s-font-face( 'SansThinItalic', 'Graphik-ThinItalic', $font-url, normal, normal );
 
 $ff-sans-regular: SansRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-regular-italic: SansRegularItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -42,6 +42,6 @@ $ff-sans-thin-italic: SansThinItalic, 'Helvetica Neue', Helvetica, Arial, sans-s
 
 // ICONFONT
 
-@include s-font-face( 'IconFont', 'FontAwesome Regular', $font-url, 400, normal );
+@include s-font-face( 'IconFont', 'FontAwesome Regular', $font-url, normal, normal );
 
 $ff-iconfont: IconFont;
