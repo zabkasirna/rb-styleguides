@@ -27,7 +27,7 @@ var conf = {
 
     vendor: {
         src: root + '/bower_components',
-        dest: dest + '/script/vendor'
+        dest: dest + '/vendor'
     },
 
     browserify: {

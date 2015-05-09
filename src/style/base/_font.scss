@@ -1,0 +1,47 @@
+$font-url: 'font/';
+
+// SANS
+
+@include s-font-face( 'SansRegular', 'Graphik-Regular', $font-url, 400, normal );
+@include s-font-face( 'SansRegularItalic', 'Graphik-RegularItalic', $font-url, 400, normal );
+@include s-font-face( 'SansBlack', 'Graphik-Black', $font-url, 400, normal );
+@include s-font-face( 'SansBlackItalic', 'Graphik-BlackItalic', $font-url, 400, normal );
+@include s-font-face( 'SansBold', 'Graphik-Bold', $font-url, 400, normal );
+@include s-font-face( 'SansBoldItalic', 'Graphik-BoldItalic', $font-url, 400, normal );
+@include s-font-face( 'SansExtraLight', 'Graphik-ExtraLight', $font-url, 400, normal );
+@include s-font-face( 'SansExtraLightItalic', 'Graphik-ExtraLightItalic', $font-url, 400, normal );
+@include s-font-face( 'SansLight', 'Graphik-Light', $font-url, 400, normal );
+@include s-font-face( 'SansLightItalic', 'Graphik-LightItalic', $font-url, 400, normal );
+@include s-font-face( 'SansMedium', 'Graphik-Medium', $font-url, 400, normal );
+@include s-font-face( 'SansMediumItalic', 'Graphik-MediumItalic', $font-url, 400, normal );
+@include s-font-face( 'SansSemiBold', 'Graphik-SemiBold', $font-url, 400, normal );
+@include s-font-face( 'SansSemiBoldItalic', 'Graphik-SemiBoldItalic', $font-url, 400, normal );
+@include s-font-face( 'SansSuper', 'Graphik-Super', $font-url, 400, normal );
+@include s-font-face( 'SansSuperItalic', 'Graphik-SuperItalic', $font-url, 400, normal );
+@include s-font-face( 'SansThin', 'Graphik-Thin', $font-url, 400, normal );
+@include s-font-face( 'SansThinItalic', 'Graphik-ThinItalic', $font-url, 400, normal );
+
+$ff-sans-regular: SansRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-regular-italic: SansRegularItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-black: SansBlack, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-black-italic: SansBlackItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-bold: SansBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-bold-italic: SansBoldItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-extralight: SansExtraLight, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-extralight-italic: SansExtraLightItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-light: SansLight, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-light-italic: SansLightItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-medium: SansMedium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-medium-italic: SansMediumItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-semibold: SansSemiBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-semibold-italic: SansSemiBoldItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-super: SansSuper, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-super-italic: SansSuperItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-thin: SansThin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-thin-italic: SansThinItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// ICONFONT
+
+@include s-font-face( 'IconFont', 'FontAwesome Regular', $font-url, 400, normal );
+
+$ff-iconfont: IconFont;
