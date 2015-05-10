@@ -11,7 +11,6 @@ gulp.task('default', function(done) {
     sequence(
         ['markups'],
         ['styles'],
-        ['script'],
         ['watch'],
         done
     );

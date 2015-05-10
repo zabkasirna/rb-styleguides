@@ -25,6 +25,12 @@
 <body>
     <header>
 
+        <nav class="top-nav">
+            <div class="container">
+                <div class="nav-wrapper"><a class="page-title">Shadow</a></div>
+            </div>
+        </nav>
+
         <div class="container">
             <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle"><i class="fa fa-bars"></i></a>
         </div>
@@ -91,63 +97,68 @@
     </header>
 
     <main>
-        <div class="section no-pad-bot" id="index-banner">
-            <div class="container">
-                <h1 class="header center">ReadingBulb</h1>
-                <div class='row center'>
-                    <h4 class="header col s12 light center">The Styleguide</h4>
-                </div>
-                <div class="row center">
-                    <a href="#" class="btn-large waves-effect waves-light">Get Started</a>
-                </div>
-            </div>
-
-            <div class="github-commit">
-                <div class="container">
-                    <div class="commit">
-                        Latest Commit on Github: &nbsp;&nbsp;
-                        <a href="" class="sha"></a>
-                        &nbsp;&nbsp;
-                        <span class="date"></span>
-                        <a id="github-button" href="https://github.com/Dogfalo/materialize" class="btn-flat right grey-text text-lighten-5 waves-effect waves-light hide-on-small-only">Github</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="container">
-            <div class="section">
+            <div class="row">
 
-                <div class="row">
-                    <h3 class="col s12 light center header">Warehouse bomb table San Francisco j-pop singularity industrial grade gang ablative sunglasses.</h3>
+                <div class="col s12 m9 l10">
+
+                    <div id="shadow" class="section scrollspy">
+                        <p class="caption">In material design, everything should have a certain z-depth that determines how far raised or close to the page the element is.</p>
+                        <p>You can easily apply this shadow effect by adding a <code class="language-markup">class="z-depth-2"</code> to an HTML tag. Alternatively you can extend any of these shadows with Sass using <code class="language-scss">@extend .z-depth-2</code>. A <code class="language-scss">z-depth-0</code> can be used to remove shadows from elements that have z-depths by default. </p>
+                        <div class="row">
+                            <div class="col s12 m4 l2">
+                                <p class="z-depth-0 shadow-demo"></p>
+                            </div>
+                            <div class="col s12 m4 l2">
+                                <p class="z-depth-1 shadow-demo"></p>
+                            </div>
+                            <div class="col s12 m4 l2">
+                                <p class="z-depth-2 shadow-demo"></p>
+                            </div>
+                            <div class="col s12 m4 l2">
+                                <p class="z-depth-3 shadow-demo"></p>
+                            </div>
+                            <div class="col s12 m4 l2">
+                                <p class="z-depth-4 shadow-demo"></p>
+                            </div>
+                            <div class="col s12 m4 l2">
+                                <p class="z-depth-5 shadow-demo"></p>
+                            </div>
+                        </div>
+                        <pre><code class="language-markup col s12">
+    &lt;div class="col s12 m2">
+      &lt;p class="z-depth-1">z-depth-1&lt;/p>
+    &lt;/div>
+    &lt;div class="col s12 m2">
+      &lt;p class="z-depth-2">z-depth-2&lt;/p>
+    &lt;/div>
+    &lt;div class="col s12 m2">
+      &lt;p class="z-depth-3">z-depth-3&lt;/p>
+    &lt;/div>
+    &lt;div class="col s12 m2">
+      &lt;p class="z-depth-4">z-depth-4&lt;/p>
+    &lt;/div>
+    &lt;div class="col s12 m2">
+      &lt;p class="z-depth-5">z-depth-5&lt;/p>
+    &lt;/div>
+        </code></pre>
+                    </div>
                 </div>
 
-                <!--   Promo Section   -->
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="center promo">
-                            <i class="mdi-image-flash-on"></i>
-                            <p class="promo-caption">Speeds up development</p>
-                            <p class="light left-align">Media paranoid apophenia youtube realism grenade meta-urban tiger-team tube Tokyo silent tattoo Shibuya smart-woman. Voodoo god numinous man sentient pre-Chiba sign physical papier-mache saturation point smart-range-rover.</p>
+                <div class="col hide-on-small-only m3 l2">
+                    <div class="toc-wrapper">
+                        <div class="buysellads hide-on-small-only">
+                            <!-- CarbonAds Zone Code -->
+                            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=materializecss" id="_carbonads_js"></script>
                         </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div class="center promo">
-                            <i class="mdi-social-group"></i>
-                            <p class="promo-caption">User Experience Focused</p>
-                            <p class="light left-align">Modem dolphin rifle. Singularity military-grade weathered 3D-printed engine car office network footage market beef noodles towards range-rover nano-bomb. Towards industrial grade tank-traps post-neural concrete apophenia crypto-sign.</p>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div class="center promo">
-                            <i class="mdi-action-settings"></i>
-                            <p class="promo-caption">Easy and Fun to develop</p>
-                            <p class="light left-align">Rain nodality dead j-pop apophenia silent dissident market face forwards dome urban tank-traps nano-sub-orbital tube. Dissident computer beef noodles singularity hotdog systemic 8-bit face forwards chrome decay modem nodality.</p>
+                        <div style="height: 1px;">
+                            <ul class="section table-of-contents">
+                                <li><a href="#shadow">Shadows</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>

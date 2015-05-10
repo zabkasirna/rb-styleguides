@@ -30,7 +30,9 @@
     "hammer.js": "~2.0.4",
     "jquery.hammer.js": "~2.0.0",
     "hammer-touchemulator": "~0.0.2",
-    "materialize": "~0.96.1"
+    "materialize": "~0.96.1",
+    "prism": "*",
+    "jquery-timeago": "~1.4.1"
   },
   "overrides": {
     "modernizr": {
