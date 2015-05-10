@@ -19,25 +19,25 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 nav {
-  // background-color: color("materialize-red", "lighten-2");
+  // background-color: color("rb-primer", "lighten-2");
 
   a {
     -webkit-font-smoothing: antialiased;
   }
   ul li:hover, ul li.active {
-    background-color: color("materialize-red", "lighten-1");
+    background-color: color("rb-primer", "lighten-1");
   }
 }
 
 .header {
-  color: color("materialize-red", "lighten-2");
+  color: color("rb-primer", "lighten-2");
   font-weight: 300;
 }
 
 .caption {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .preview {
@@ -127,25 +127,25 @@ nav.top-nav {
 a.button-collapse.top-nav {
   position: absolute;
   text-align: center;
+  line-height: 48px;
   height: 48px;
   width: 48px;
-  left: 7.5%;
-  top: 0;
+  left: 4px;
+  top: 4px;
   float: none;
-  margin-left: 1.5rem;
-  color: #fff;
-  font-size: 32px;
+  color: $secondary-color;
+  font-size: 20px;
   z-index: 2;
 
   &.full {
     line-height: 122px;
   }
 }
-@media #{$small-and-down} {
-  a.button-collapse.top-nav {
-    left: 5%;
-  }
-}
+// @media #{$small-and-down} {
+//   a.button-collapse.top-nav {
+//     left: 0;
+//   }
+// }
 
 @media #{$medium-and-down} {
   nav .nav-wrapper {
@@ -193,7 +193,7 @@ a.button-collapse.top-nav {
 }
 
 #index-banner {
-  background-color: color("materialize-red", "lighten-2");
+  background-color: color("rb-primer", "lighten-2");
   .container {
     position: relative;
   }
@@ -227,12 +227,10 @@ a.button-collapse.top-nav {
 
 // Latest commit widget
 .github-commit {
-  padding: 14px 0;
+  padding: 16px 0;
   height: 64px;
-  line-height: 36px;
   background-color: #5c5757;
   color: hsl(0, 0%, 90%);
-  font-size: .9rem;
 }
 @media #{$medium-and-down} {
   .github-commit {
@@ -248,13 +246,15 @@ a.button-collapse.top-nav {
   }
 }
 
+.commit { line-height: 2rem; }
+
 .sha {
   color: hsl(0, 0%, 94%) ;
- margin: 0 6px 0 6px;
+ margin: 0 8px 0 8px;
 }
 
 #download-button {
-  background-color: color("materialize-red", "lighten-3");
+  background-color: color("rb-primer", "lighten-3");
   width: 260px;
   height: 70px;
   line-height: 70px;
@@ -262,20 +262,20 @@ a.button-collapse.top-nav {
   font-weight: 400;
 
   &:hover {
-    background-color: lighten(color("materialize-red", "base"), 30%);
+    background-color: lighten(color("rb-primer", "base"), 30%);
   }
 }
 
 .promo{
   width: 100%;
   @media #{$medium-and-down} {
-    width: 60%;
+    // width: 80%;
     margin: 0 auto;
     display: block;
   }
 
   i {
-    color: color("materialize-red", "lighten-2");
+    color: color("rb-primer", "lighten-2");
     font-size: 7rem;
     display: block;
   }
@@ -293,14 +293,14 @@ a.button-collapse.top-nav {
   background-color: #FFF;
   position: relative;
   a {
-      color: color("materialize-red", "lighten-2");
+      color: color("rb-primer", "lighten-2");
     }
   li {
     &:hover {
-      background-color: color("materialize-red", "lighten-5");
+      background-color: color("rb-primer", "lighten-5");
     }
     &.active {
-      background-color: color("materialize-red", "lighten-5");
+      background-color: color("rb-primer", "lighten-5");
     }
   }
   .container {
@@ -785,14 +785,14 @@ body.parallax-demo footer {
       color: $off-black;
       &:hover{
       color: inherit;
-      background-color: color("materialize-red", "lighten-5");
+      background-color: color("rb-primer", "lighten-5");
       }
     }
 
   }
 
   .txlive-langselector-toggle {
-    border-bottom: 2px solid color("materialize-red", "lighten-2");
+    border-bottom: 2px solid color("rb-primer", "lighten-2");
   }
 
   .txlive-langselector-current {

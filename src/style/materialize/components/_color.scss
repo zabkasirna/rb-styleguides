@@ -7,17 +7,17 @@
 // Google Color Palette defined: http://www.google.com/design/spec/style/color.html
 
 
-$materialize-red: (
-  "lighten-5":  #d8ccc6,
-  "lighten-4":  #c1aea4,
-  "lighten-3":  #ae9589,
-  "lighten-2":  #6a5449,
-  "lighten-1":  #463730,
-  "base":       #302621,
-  "darken-1":   #241d19,
-  "darken-2":   #1e1815,
-  "darken-3":   #15110f,
-  "darken-4":   #0f0c0a,
+$rb-primer: (
+  "lighten-5":  #eee9e7,
+  "lighten-4":  #daccc9,
+  "lighten-3":  #bba5a0,
+  "lighten-2":  #745149,
+  "lighten-1":  #674941,
+  "base":       #5e423b,
+  "darken-1":   #4e3731,
+  "darken-2":   #3e2d28,
+  "darken-3":   #241b1a,
+  "darken-4":   #15100f,
 );
 
 $red: (
@@ -157,20 +157,20 @@ $cyan: (
 );
 
 $teal: (
-  "lighten-5":  #d5dddb,
-  "lighten-4":  #b0bfbb,
-  "lighten-3":  #88a099,
-  "lighten-2":  #6b857e,
-  "lighten-1":  #596e69,
-  "base":       #4E615C,
-  "darken-1":   #42524e,
-  "darken-2":   #394743,
-  "darken-3":   #222a28,
-  "darken-4":   #121715,
-  "accent-1":   #a7ffeb,
-  "accent-2":   #64ffda,
-  "accent-3":   #1de9b6,
-  "accent-4":   #00bfa5
+  "lighten-5":  #e0ebea,
+  "lighten-4":  #a7c8c5,
+  "lighten-3":  #8eb8b5,
+  "lighten-2":  #75a8a4,
+  "lighten-1":  #51807c,
+  "base":       #3b5e5b,
+  "darken-1":   #33514f,
+  "darken-2":   #2b4543,
+  "darken-3":   #1d2f2e,
+  "darken-4":   #0e1615,
+  "accent-1":   #9cd3ce,
+  "accent-2":   #83c3bf,
+  "accent-3":   #448d87,
+  "accent-4":   #224e4a
 );
 
 $green: (
@@ -338,7 +338,7 @@ $shades: (
 );
 
 $colors: (
-  "materialize-red": $materialize-red,
+  "rb-primer": $rb-primer,
   "red": $red,
   "pink": $pink,
   "purple": $purple,

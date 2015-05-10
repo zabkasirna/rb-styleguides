@@ -1,9 +1,9 @@
 /*** Colors ***/
-$primary-color: color("materialize-red", "lighten-2") !default;
+$primary-color: color("rb-primer", "lighten-2") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("teal", "lighten-1") !default;
+$secondary-color: color("teal", "accent-3") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
@@ -18,10 +18,10 @@ $button-color-disabled: #9F9F9F !default;
 $button-color-flat: #343434 !default;
 $button-color-raised: #fff !default;
 $button-floating-size: 37px !default;
-$button-height: 36px !default;
-$button-font-size-shared: 1.3rem !default;
+$button-height: 32px !default;
+$button-font-size-shared: 1rem !default;
 $button-large-icon-font-size: 1.6rem !default;
-$button-line-height: 36px !default;
+$button-line-height: $button-height !default;
 
 /*** Cards ***/
 $card-padding: 20px !default;
@@ -124,13 +124,13 @@ $toast-color: #323232 !default;
 $toast-text-color: #fff !default;
 
 /*** Typography ***/
-$off-black: rgba(0, 0, 0, 0.87) !default;
+$off-black: color('rb-primer', 'darken-2') !default;
 // Header Styles
-$h1-fontsize: 4.2rem !default;
-$h2-fontsize: 3.56rem !default;
-$h3-fontsize: 2.92rem !default;
-$h4-fontsize: 2.28rem !default;
-$h5-fontsize: 1.64rem !default;
+$h1-fontsize: 3.157rem !default;
+$h2-fontsize: 2.369rem !default;
+$h3-fontsize: 1.777rem !default;
+$h4-fontsize: 1.333rem !default;
+$h5-fontsize: 1rem !default;
 $h6-fontsize: 1rem !default;
 
 // Footer
