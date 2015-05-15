@@ -11,7 +11,7 @@
     <title>ReadingBulb - Styleguide</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="../favicon.ico" sizes="32x32">
 
 
     <!--  Android 5 Chrome Color-->
@@ -19,15 +19,263 @@
 
     <!-- CSS-->
     <link rel="stylesheet" href="../../vendor/prism/themes/prism.css" >
-    <link rel="stylesheet" href="../../style/style.css" >
+    <link rel="stylesheet" href="../../style/proto.css" >
 </head>
 
 <body>
 
-    <header>
+    <header class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                
+                <!-- <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle"><i class="fa fa-bars"></i></a> -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col s4 center-align">
+                            <a class="" href="#" onclick='mySwipe.slide(0, 300)'>Featured</a>
+                        </div>
+                        <div class="col s4 center-align">
+                            <a class="" href="#" onclick='mySwipe.slide(1, 300)'>Latest</a>
+                        </div>
+                        <div class="col s4 center-align">
+                            <a class="" href="#" onclick='mySwipe.slide(2, 300)'>Subscribed</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <ul class="side-nav" id="side-nav-demo">
+                    <li><a href="#">Menu A</a></li>
+                    <li><a href="#">Menu B</a></li>
+                    <li><a href="#">Menu C</a></li>
+                </ul> -->
+
+                <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                    <a class="btn-floating red"><i class="fa fa-plus"></i></a>
+                    <ul>
+                        <li class="full-width"><a class="btn-floating red"><i class="small fa fa-search"></i></a></li>
+                        <li class="full-width"><a class="btn-floating red"><i class="small fa fa-filter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
+        <div class="container">
+
+            <div class="swipe" id="cardsWrapper">
+                <div class="swap-wrap">
+                    <div class="row">
+                        <div class="col s12 m4">
+                    
+                            <div class="card-group">
+                    
+                                <div class="card">
+                                
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="http://lorempixel.com/600/400/people/7">
+                                    </div>
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Vinylpen sprawl you tube bridge crypto motion courier stimulate. </span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Pen sprawl systemic kanji jeans beef noodles shoes paranoid.</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="card">
+                                
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="http://lorempixel.com/600/400/sports">
+                                    </div>
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Singularity Advert Narrative-ware Neon Post-tower</span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Shanty town futurity-space city nodal point pistol singularity advert narrative-ware neon post-tower. Hacker shanty town claymore mine neon corporation fetishism j-pop footage futurity lights shrine corrupted cyber.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="http://lorempixel.com/600/400/people/4">
+                                    </div>
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Singularity Advert Narrative-ware Neon Post-tower</span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Shanty town futurity-space city nodal point pistol singularity advert narrative-ware neon post-tower. Hacker shanty town claymore mine neon corporation fetishism j-pop footage futurity lights shrine corrupted cyber.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="http://lorempixel.com/600/400/business">
+                                    </div>
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Urban papier-mache carbon monofilament spook 3D-printed gang bridge numinous rebar.</span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                                        <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="card-group">
+                    
+                                <div class="card">
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Singularity Advert Narrative-ware Neon Post-tower</span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Shanty town futurity-space city nodal point pistol singularity advert narrative-ware neon post-tower. Hacker shanty town claymore mine neon corporation fetishism j-pop footage futurity lights shrine corrupted cyber.</p>
+                                    </div>
+                                </div>
+                                                
+                                <div class="card">
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Cyber-systema skyscraper corrupted singularity.</span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Shanty town futurity-space city nodal point pistol singularity advert narrative-ware neon post-tower. Hacker shanty town claymore mine neon corporation fetishism j-pop footage futurity lights shrine corrupted cyber.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Narrative motion singularity youtube dolphin physical. </span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Shanty town futurity-space city nodal point pistol singularity advert narrative-ware neon post-tower. Hacker shanty town claymore mine neon corporation fetishism j-pop footage futurity lights shrine corrupted cyber.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Singularity Advert Narrative-ware Neon Post-tower</span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                                        <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="card-group">
+                    
+                                <div class="card">
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Singularity Advert Narrative-ware Neon Post-tower</span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Shanty town futurity-space city nodal point pistol singularity advert narrative-ware neon post-tower. Hacker shanty town claymore mine neon corporation fetishism j-pop footage futurity lights shrine corrupted cyber.</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="card">
+                                
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="http://lorempixel.com/600/400/sports">
+                                    </div>
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Singularity Advert Narrative-ware Neon Post-tower</span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Shanty town futurity-space city nodal point pistol singularity advert narrative-ware neon post-tower. Hacker shanty town claymore mine neon corporation fetishism j-pop footage futurity lights shrine corrupted cyber.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="http://lorempixel.com/600/400/people/4">
+                                    </div>
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Singularity Advert Narrative-ware Neon Post-tower</span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Shanty town futurity-space city nodal point pistol singularity advert narrative-ware neon post-tower. Hacker shanty town claymore mine neon corporation fetishism j-pop footage futurity lights shrine corrupted cyber.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Cyber-systema skyscraper corrupted singularity.</span>
+                                
+                                        <p><a href="#!">This is a link</a></p>
+                                    </div>
+                                
+                                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                                        <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                        <p>Shanty town futurity-space city nodal point pistol singularity advert narrative-ware neon post-tower. Hacker shanty town claymore mine neon corporation fetishism j-pop footage futurity lights shrine corrupted cyber.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -38,7 +286,10 @@
     <script src="../../vendor/jquery-timeago/jquery.timeago.js"></script>
     <script src="../../vendor/prism/prism.js"></script>
     <script src="../../vendor/materialize/bin/materialize.js"></script>
-    <script src="../../script/rb-styleguide.js"></script>
+    <script src="../../vendor/swipe/swipe.js"></script>
+    <script src="../../script/rb-proto.js"></script>
 </body>
 
 </html>
+
+<!-- Render-farm office cyber-math-boy neural realism long-chain hydrocarbons systema faded Legba. Disposable woman modem semiotics smart-marketing media savant free-market dead franchise systemic tube. Artisanal post-savant towards table tank-traps-space otaku katana lights. J-pop boy paranoid hotdog faded chrome network. Ablative city nano-military-grade carbon sign skyscraper DIY pistol kanji. Knife nodal point uplink neural motion footage tattoo sign digital long-chain hydrocarbons voodoo god 3D-printed sensory post-marketing j-pop franchise. Narrative sub-orbital human jeans corrupted towards drone math-sign computer pistol.  -->

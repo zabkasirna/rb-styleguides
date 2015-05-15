@@ -15,3 +15,12 @@ gulp.task('default', function(done) {
         done
     );
 });
+
+gulp.task('proto', function(done) {
+    sequence(
+        ['markups'],
+        ['style:proto'],
+        ['watch'],
+        done
+    );
+});

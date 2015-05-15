@@ -18,7 +18,7 @@ var gulp         = require('gulp')
 
 gulp.task('style:modern', function() {
 
-    var file = 'style';
+    var file = 'styleguide';
 
     return gulp.src( config.style.src + file + '.scss' )
         .pipe(sourcemaps.init())
@@ -35,7 +35,7 @@ gulp.task('style:modern', function() {
 
 gulp.task('style:old', function() {
 
-    var file = 'style';
+    var file = 'styleguide';
 
     return gulp.src( config.style.src + file + '.scss' )
         .pipe(replace(/\$old\:\s*false;/g, function(str) {
@@ -51,6 +51,40 @@ gulp.task('style:old', function() {
         .pipe( rename( file + ".ie.css") )
         .pipe( gulp.dest( config.style.dest ) )
         .pipe( size( { title: config.style.dest + file + '.ie.css' } ) )
+    ;
+});
+
+gulp.task('style:styleguide', function() {
+
+    var file = 'styleguide';
+
+    return gulp.src( config.style.src + file + '.scss' )
+        .pipe(sourcemaps.init())
+        .pipe(autoprefixer({
+            browsers: 'last 2 versions',
+        }))
+        .pipe( sass() )
+        .pipe(sourcemaps.write('./maps'))
+        .on( 'error', errors )
+        .pipe(gulp.dest( config.style.dest ))
+        .pipe( size( { title: config.style.dest + file + '.css' } ) )
+    ;
+});
+
+gulp.task('style:proto', function() {
+
+    var file = 'proto';
+
+    return gulp.src( config.style.src + file + '.scss' )
+        .pipe(sourcemaps.init())
+        .pipe(autoprefixer({
+            browsers: 'last 2 versions',
+        }))
+        .pipe( sass() )
+        .pipe(sourcemaps.write('./maps'))
+        .on( 'error', errors )
+        .pipe(gulp.dest( config.style.dest ))
+        .pipe( size( { title: config.style.dest + file + '.css' } ) )
     ;
 });
 

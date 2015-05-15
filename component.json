@@ -1,0 +1,8 @@
+{
+    "name": "rb-styleguides",
+    "description": "ReadingBulb Styleguides",
+    "dependencies": {
+        "thebird/swipe": "*"
+    },
+    "main": "app/script/rb-styleguide.js"
+}
