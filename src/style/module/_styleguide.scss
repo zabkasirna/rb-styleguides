@@ -5,17 +5,8 @@ body {
   background-color: #fcfcfc;
 }
 
-p.box {
-  padding: 20px;
-}
 p {
-  color: rgba(0, 0, 0, 0.71);
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1,h2,h3,h4,h5,h6 {
-  -webkit-font-smoothing: antialiased;
+  &.box { padding: 20px; }
 }
 
 nav {
@@ -193,7 +184,7 @@ a.button-collapse.top-nav {
 }
 
 #index-banner {
-  background-color: color("rb-primer", "lighten-1");
+  background-color: color("rb-primer", "darken-1");
   .container {
     position: relative;
   }
@@ -229,7 +220,7 @@ a.button-collapse.top-nav {
 .github-commit {
   padding: 16px 0;
   height: 64px;
-  background-color: #5c5757;
+  background-color: color("rb-primer", "base");
   color: hsl(0, 0%, 90%);
 }
 @media #{$medium-and-down} {

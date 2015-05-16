@@ -2,26 +2,20 @@ $font-url: 'font/';
 
 // SANS
 
-@include s-font-face( 'SansRegular', 'Graphik-Regular', $font-url, normal, normal );
-@include s-font-face( 'SansRegularItalic', 'Graphik-RegularItalic', $font-url, normal, normal );
-@include s-font-face( 'SansBlack', 'Graphik-Black', $font-url, normal, normal );
-@include s-font-face( 'SansBlackItalic', 'Graphik-BlackItalic', $font-url, normal, normal );
-@include s-font-face( 'SansBold', 'Graphik-Bold', $font-url, normal, normal );
-@include s-font-face( 'SansBoldItalic', 'Graphik-BoldItalic', $font-url, normal, normal );
-@include s-font-face( 'SansExtraLight', 'Graphik-ExtraLight', $font-url, normal, normal );
-@include s-font-face( 'SansExtraLightItalic', 'Graphik-ExtraLightItalic', $font-url, normal, normal );
-@include s-font-face( 'SansLight', 'Graphik-Light', $font-url, normal, normal );
-@include s-font-face( 'SansLightItalic', 'Graphik-LightItalic', $font-url, normal, normal );
-@include s-font-face( 'SansMedium', 'Graphik-Medium', $font-url, normal, normal );
-@include s-font-face( 'SansMediumItalic', 'Graphik-MediumItalic', $font-url, normal, normal );
-@include s-font-face( 'SansSemiBold', 'Graphik-SemiBold', $font-url, normal, normal );
-@include s-font-face( 'SansSemiBoldItalic', 'Graphik-SemiBoldItalic', $font-url, normal, normal );
-@include s-font-face( 'SansSuper', 'Graphik-Super', $font-url, normal, normal );
-@include s-font-face( 'SansSuperItalic', 'Graphik-SuperItalic', $font-url, normal, normal );
-@include s-font-face( 'SansThin', 'Graphik-Thin', $font-url, normal, normal );
-@include s-font-face( 'SansThinItalic', 'Graphik-ThinItalic', $font-url, normal, normal );
+@include s-font-face( 'SansRegular', 'Neue Haas Grotesk Text W02 Regular', $font-url, normal, normal );
+@include s-font-face( 'SansRegularItalic', 'Neue Haas Grotesk Text W02 Italic', $font-url, normal, normal );
+@include s-font-face( 'SansBlack', 'Neue Haas Grotesk Display W02 Blk', $font-url, normal, normal );
+@include s-font-face( 'SansBlackItalic', 'Neue Haas Grotesk Display W02 Blk It', $font-url, normal, normal );
+@include s-font-face( 'SansBold', 'Neue Haas Grotesk Display W02 Bold', $font-url, normal, normal );
+@include s-font-face( 'SansBoldItalic', 'Neue Haas Grotesk Display W02 Bold Italic', $font-url, normal, normal );
+@include s-font-face( 'SansExtraLight', 'Neue Haas Grotesk Display W02 XtraLt', $font-url, normal, normal );
+@include s-font-face( 'SansExtraLightItalic', 'Neue Haas Grotesk Display W02 XtraLt It', $font-url, normal, normal );
+@include s-font-face( 'SansMedium', 'Neue Haas Grotesk Text W02 Medium', $font-url, normal, normal );
+@include s-font-face( 'SansMediumItalic', 'Neue Haas Grotesk Text W02 Medium It', $font-url, normal, normal );
+@include s-font-face( 'SansThin', 'Neue Haas Grotesk Display W02 Thin', $font-url, normal, normal );
+@include s-font-face( 'SansThinItalic', 'Neue Haas Grotesk Display W02 Th It', $font-url, normal, normal );
 
-$ff-sans-regular: SansRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-regular: SansRegular, serif;
 $ff-sans-regular-italic: SansRegularItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-black: SansBlack, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-black-italic: SansBlackItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -29,14 +23,8 @@ $ff-sans-bold: SansBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-bold-italic: SansBoldItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-extralight: SansExtraLight, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-extralight-italic: SansExtraLightItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$ff-sans-light: SansLight, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$ff-sans-light-italic: SansLightItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-medium: SansMedium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-medium-italic: SansMediumItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$ff-sans-semibold: SansSemiBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$ff-sans-semibold-italic: SansSemiBoldItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$ff-sans-super: SansSuper, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$ff-sans-super-italic: SansSuperItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-thin: SansThin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-thin-italic: SansThinItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 

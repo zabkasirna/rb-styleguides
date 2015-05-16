@@ -1,0 +1,134 @@
+/*! Typebase.scss v0.1.0 | MIT License */
+
+$baseFontSize: 16;
+$baseLineHeight: 1.618;
+$leading:$baseLineHeight * 1rem;
+$scale: 1.414;
+
+html {
+    font-family: $ff-sans-regular;
+    font-size: $baseFontSize / 16 * 100%;
+
+    color: color("brown", "darken-4");
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: auto;
+    -moz-text-size-adjust: auto;
+    -ms-text-size-adjust: auto;
+    -o-text-size-adjust: auto;
+    text-size-adjust: auto;
+}
+
+p {
+    line-height: $leading;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &:first-of-type,
+    & + p { margin-top: $leading; }
+}
+
+ul,
+ol {
+    margin-top: $leading;
+    margin-bottom: $leading;
+
+    li { line-height: $leading; }
+
+    ul,
+    ol {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+blockquote {
+    line-height: $leading;
+    margin-top: $leading;
+    margin-bottom: $leading;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: $ff-sans-bold;
+    margin-top: $leading;
+    margin-bottom: 0;
+    line-height: $leading;
+}
+
+h1, .h1 {
+    font-size: 3 * $scale * 1rem;
+    line-height: 3 * $leading;
+
+    // Mobile Small Screen
+    @media #{$small-and-down} {
+        font-size: 2 * $scale * 1rem;
+        line-height: 2 * $leading;
+
+        letter-spacing: -0.025em;
+    }
+
+    // Medium and up screen
+    @media #{$medium-and-up} { letter-spacing: 0.025em; }
+}
+
+h2, .h2 {
+    font-size: 2 * $scale * 1rem;
+    line-height: 2 * $leading;
+
+    // Mobile Small Screen
+    @media #{$small-and-down} {
+        font-size: 1.5 * $scale * 1rem;
+        line-height: 1.5 * $leading;
+
+        letter-spacing: -0.025em;
+    }
+
+    // Medium and up screen
+    @media #{$medium-and-up} { letter-spacing: 0.025em; }
+}
+
+h3, .h3 {
+    font-size: 1 * $scale * 1rem;
+}
+
+h4, .h4 {
+    font-family: $ff-sans-medium;
+    font-size: 0.9 * $scale * 1rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+h5, .h5 {
+    font-size: $scale / 3 * 1rem;
+}
+
+h6, .h6 {
+    font-size: $scale / 4 * 1rem;
+}
+
+table {
+    margin-top: $leading;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 0;
+    line-height: $baseLineHeight * $baseFontSize - 0px;
+}
+
+code { vertical-align: bottom; }
+
+.lead {
+    font-size: $scale * 1rem;
+}
+
+.hug {
+    margin-top: 0;
+}

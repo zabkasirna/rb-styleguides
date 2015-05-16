@@ -1,5 +1,5 @@
 /*** Colors ***/
-$primary-color: color("rb-primer", "lighten-2") !default;
+$primary-color: color("rb-primer", "darken-2") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
@@ -90,7 +90,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 // Grid Variables
 $num-cols: 12 !default;
-$gutter-width: 1.5rem !default;
+$gutter-width: 3rem !default;
 $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
 
