@@ -61,6 +61,9 @@ ul {
 .z-depth-0 {
   box-shadow: none !important;
 }
+.z-depth-F{
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+}
 .z-depth-1{
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
 }

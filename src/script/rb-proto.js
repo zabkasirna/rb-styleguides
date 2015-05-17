@@ -16,7 +16,8 @@
 
 (function( $ ) {
     
-    $( function() {
-        window.mySwipe = $('#cardsWrapper').Swipe().data('Swipe');
-    });
+    // $( function() {
+    //     window.mySwipe = $('#cardsWrapper').Swipe().data('Swipe');
+    // });
+
 })(jQuery);

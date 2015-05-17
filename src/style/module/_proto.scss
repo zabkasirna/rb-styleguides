@@ -1,0 +1,115 @@
+#user-dashboard {
+
+    // TOPNAV
+    .user-dashboard-topnav {
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+        background-color: #FFF;
+
+        li { padding: 0; }
+
+        a {
+            color: color('rb-primer', 'darken-2');
+
+            font-size: 13px;
+
+            @media #{$medium-and-down} {
+                padding: 1rem 0;
+            }
+        }
+
+        .side-nav-toggler {
+            width: 2.5rem;
+        }
+    }
+
+    // MAIN
+    main {
+        background-color: color('rb-primer', 'lighten-5');
+        min-height: 100vh;
+        padding-top: .5rem;
+    }
+}
+
+.timeline {
+
+    .timeline-stone {
+
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        width: 0.75rem;
+        height: 100%;
+        border-right: 1px solid #CCC;
+        box-sizing: content-box;
+        
+        .timeline-stone-inner {
+            min-width: 1.5rem;
+            min-height: 1.5rem;
+            max-width: 1.5rem;
+            max-height: 1.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            overflow: hidden;
+            border-radius: 50%;
+            background-color: color('blue', 'base');
+        }
+    }
+
+    .card-col {
+        padding: 0 1rem;
+    }
+
+    .card {
+
+        // width: 90%;
+        margin-left: 2rem;
+        overflow: visible;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        .card-content-title {
+            margin: 0 0 1rem 0;
+        }
+
+        .card-content-meta {
+            display: block;
+            max-height: $leading;
+            height: $leading;
+            overflow: hidden;
+
+            font-size: 13px;
+            line-height: 100%;
+
+            .meta-from {
+                color: color('rb-primer', 'darken-1');
+
+                &:after {
+                    content: ' \2022';
+                }
+            }
+
+            .meta-timeago {
+                &:after {
+                    content: ' \2022';
+                }
+            }
+        }
+
+        .card-content-summary {
+            letter-spacing: -0.015em;           
+        }
+
+        &:after {
+            content: ' ';
+            position: absolute;
+            bottom: -2rem; left: -2rem;
+            display: block;
+            width: 0.75rem;
+            height: 2rem;
+            border-right: 1px solid #CCC;
+            box-sizing: content-box;
+        }
+    }
+}

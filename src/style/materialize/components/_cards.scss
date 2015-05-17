@@ -1,10 +1,10 @@
-
+$card-radius: 0;
 
 .card-panel {
   padding: $card-padding;
   margin: $element-top-margin 0 $element-bottom-margin 0;
   border-radius: 2px;
-  @extend .z-depth-1;
+  @extend .z-depth-F;
   background-color: $card-bg-color;
 }
 
@@ -13,8 +13,8 @@
   overflow: hidden;
   margin: $element-top-margin 0 $element-bottom-margin 0;
   background-color: $card-bg-color;
-  border-radius: 2px;
-  @extend .z-depth-1;
+  border-radius: $card-radius;
+  @extend .z-depth-F;
 
 
   .card-title {
@@ -84,7 +84,7 @@
 
     // Image background for content
     img {
-      border-radius: 2px 2px 0 0;
+      border-radius: $card-radius;
       position: relative;
       left: 0;
       right: 0;
@@ -104,7 +104,7 @@
 
   .card-content {
     padding: $card-padding;
-    border-radius: 0 0 2px 2px;
+    border-radius: $card-radius;
 
 
     p {
