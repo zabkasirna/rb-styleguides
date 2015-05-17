@@ -28,6 +28,16 @@
         min-height: 100vh;
         padding-top: .5rem;
     }
+
+    .page-footer {
+        margin-top: 0;
+        background-color: color('rb-primer', 'darken-3');
+
+        .footer-copyright {
+            font-size: 12px;
+            text-align: right;
+        }
+    }
 }
 
 .timeline {
@@ -112,4 +122,6 @@
             box-sizing: content-box;
         }
     }
+
+    & > *:last-child { margin-bottom: 0; }
 }
