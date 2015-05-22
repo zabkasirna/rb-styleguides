@@ -32,11 +32,16 @@
     "hammer-touchemulator": "~0.0.2",
     "materialize": "~0.96.1",
     "prism": "*",
-    "jquery-timeago": "~1.4.1"
+    "jquery-timeago": "~1.4.1",
+    "waypoints": "~3.1.1",
+    "headroom.js": "~0.7.0"
   },
   "overrides": {
     "modernizr": {
       "main": "modernizr.js"
+    },
+    "waypoints": {
+      "main": "lib/jquery.waypoints.js"
     }
   }
 }

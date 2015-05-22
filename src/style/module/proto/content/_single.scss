@@ -1,0 +1,119 @@
+#single-content {
+
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content-outer {
+
+    .content-cover-outer {
+
+        @include clearfix;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        overflow: hidden;
+
+        &.full-height {
+            height: 100vh;
+            min-height: 100vh;
+        }
+
+        .content-meta-outer {
+            color: #FFF;
+
+            padding: 1rem;
+
+            * { color: inherit; }
+
+            & > * {
+                float: left;
+            }
+        }
+
+        .content-cover-image {
+            background: url(../asset/image/sample-1.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+            position: relative;
+
+            height: 100%;
+            width: 100%;
+        }
+
+        .content-cover-head {
+
+            @include clearfix;
+
+            position: absolute;
+            bottom: 5rem; left: 0;
+
+            .content-title {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .content-meta-source-icon {
+                margin-right: .5rem;
+                height: 1.5rem;
+
+                position: relative;
+
+                max-width: 2rem;
+                max-height: 2rem;
+                width: 2rem;
+                height: 2rem;
+                overflow: hidden;
+                border-radius: 50%;
+
+                background-color: #FFF;
+
+                padding: 2px;
+
+                img {
+                    width: 1.5rem;
+                    position: absolute;
+                    top: .25rem; left: .25rem;
+                }
+            }
+
+            .content-meta-source-text,
+            .content-meta-author,
+            .content-meta-timeago {
+                margin-right: 4px;
+                padding-top: 10px;
+                height: 2rem;
+
+                p {
+                    font-size: 12px;
+                    letter-spacing: -0.015em;
+
+                    margin: 0;
+                    height: 100%;
+                    line-height: 100%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .content-body {
+        margin-top: 80vh;
+        padding: 0 1rem 5rem 1rem;
+
+        font-size: 15px;
+
+        * {
+            font-size: inherit;
+            // letter-spacing: -0.015em;
+        }
+    }
+}

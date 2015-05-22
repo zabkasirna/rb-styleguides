@@ -18,7 +18,10 @@
 @import "materialize/materialize";
 
 /* ------ {{ materialize }} ------ */
-@import "module/proto";
+@import "module/proto/page/user-dashboard";
+@import "module/proto/timeline/timeline";
+@import "module/proto/navbar/navbar";
+@import "module/proto/content/single";
 
 /* ------ {{ swipe }} ------ */
 @import "module/swipe";

@@ -1,46 +1,9 @@
-#user-dashboard {
-
-    // TOPNAV
-    .user-dashboard-topnav {
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
-        background-color: #FFF;
-
-        li { padding: 0; }
-
-        a {
-            color: color('rb-primer', 'darken-2');
-
-            font-size: 13px;
-
-            @media #{$medium-and-down} {
-                padding: 1rem 0;
-            }
-        }
-
-        .side-nav-toggler {
-            width: 2.5rem;
-        }
-    }
-
-    // MAIN
-    main {
-        background-color: color('rb-primer', 'lighten-5');
-        min-height: 100vh;
-        padding-top: .5rem;
-    }
-
-    .page-footer {
-        margin-top: 0;
-        background-color: color('rb-primer', 'darken-3');
-
-        .footer-copyright {
-            font-size: 12px;
-            text-align: right;
-        }
-    }
-}
-
 .timeline {
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     .timeline-stone {
 
@@ -61,7 +24,18 @@
             height: 1.5rem;
             overflow: hidden;
             border-radius: 50%;
-            background-color: color('blue', 'base');
+            background-color: #FFF;
+            position: relative;
+            padding: 10%;
+            border: 1px solid #FCFCFC;
+
+            .timeline-stone-icon {
+                position: absolute;
+                max-width: 90%;
+                width: 90%;
+                top: 5%;
+                left: 5%;
+            }
         }
     }
 
@@ -72,12 +46,14 @@
     .card {
 
         // width: 90%;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
         overflow: visible;
 
         &:first-of-type {
             margin-top: 0;
         }
+
+        .card-content.no-pad-bottom { padding-bottom: 0; }
 
         .card-content-title {
             margin: 0 0 1rem 0;
@@ -91,6 +67,9 @@
 
             font-size: 13px;
             line-height: 100%;
+
+            white-space: nowrap;
+            text-overflow: ellipsis;
 
             .meta-from {
                 color: color('rb-primer', 'darken-1');
@@ -108,16 +87,21 @@
         }
 
         .card-content-summary {
-            letter-spacing: -0.015em;           
+            letter-spacing: -0.010em;
+            font-size: 15px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 5rem;
         }
 
         &:after {
             content: ' ';
             position: absolute;
-            bottom: -2rem; left: -2rem;
+            bottom: -5rem; left: -2rem;
             display: block;
             width: 0.75rem;
-            height: 2rem;
+            height: 5rem;
             border-right: 1px solid #CCC;
             box-sizing: content-box;
         }
