@@ -9110,7 +9110,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   #user-dashboard .user-dashboard-topnav .side-nav-toggler-outer, #single-content .user-dashboard-topnav .side-nav-toggler-outer {
     width: 2.5rem; }
 #user-dashboard main, #single-content main {
-  background-color: #FCFCFC;
+  background-color:#FAF7F4;
   min-height: 100vh;
   padding-top: 1rem; }
 #user-dashboard .page-footer, #single-content .page-footer {
@@ -9155,7 +9155,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .timeline .card {
   margin: 0 0 1.5rem 0;
   box-shadow: none;
-  background-color: #FCFCFC; }
+  background-color: transparent; }
   .timeline .card .card-content {
     padding: 1rem 0; }
     .timeline .card .card-content.no-pad-bottom {
