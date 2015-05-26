@@ -14,6 +14,8 @@ $font-url: 'font/';
 @include s-font-face( 'SansMediumItalic', 'Neue Haas Grotesk Text W02 Medium It', $font-url, normal, normal );
 @include s-font-face( 'SansThin', 'Neue Haas Grotesk Display W02 Thin', $font-url, normal, normal );
 @include s-font-face( 'SansThinItalic', 'Neue Haas Grotesk Display W02 Th It', $font-url, normal, normal );
+@include s-font-face( 'SansLight', 'Neue Haas Grotesk Display W02 Lt', $font-url, normal, normal );
+@include s-font-face( 'SansLightItalic', 'Neue Haas Grotesk Display W02 Lt It', $font-url, normal, normal );
 
 $ff-sans-regular: SansRegular, serif;
 $ff-sans-regular-italic: SansRegularItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -27,6 +29,8 @@ $ff-sans-medium: SansMedium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-medium-italic: SansMediumItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-thin: SansThin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-sans-thin-italic: SansThinItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-light: SansLight, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-sans-light-italic: SansLightItalic, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // ICONFONT
 

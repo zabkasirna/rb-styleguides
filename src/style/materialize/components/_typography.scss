@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  font-family: $ff-sans-regular;
+  font-family: $ff-sans-light;
   @include font-size($base-font-size);
   line-height: 1.5rem;
   color: $off-black;
