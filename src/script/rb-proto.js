@@ -24,18 +24,18 @@
 
         $('.side-nav-toggler').sideNav();
 
-        $('header.navbar-fixed')
-            .headroom({
-                "offset": 80,
-                "tolerance": 5,
-                "classes": {
-                    "initial": "navbar-animated",
-                    "pinned": "navbar-slide-down",
-                    "unpinned": "navbar-slide-up",
-                    "top": "navbar-on-top",
-                    "notTop": "navbar-not-top"
-                }
-            });
+        // $('header.navbar-fixed')
+        //     .headroom({
+        //         "offset": 80,
+        //         "tolerance": 5,
+        //         "classes": {
+        //             "initial": "navbar-animated",
+        //             "pinned": "navbar-slide-down",
+        //             "unpinned": "navbar-slide-up",
+        //             "top": "navbar-on-top",
+        //             "notTop": "navbar-not-top"
+        //         }
+        //     });
     });
 
 })(jQuery);

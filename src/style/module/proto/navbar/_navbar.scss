@@ -38,6 +38,7 @@
 .navbar-fixed {
     position: fixed;
     min-width: 100%;
+    bottom: 0;
 }
 
 .navbar-animated {
@@ -61,4 +62,16 @@
     -moz-animation-name: navbarSlideUp;
     -o-animation-name: navbarSlideUp;
     animation-name: navbarSlideUp;
+}
+
+.nav-text,
+.nav-icon {
+    display: block;
+    width: 100%;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+}
+.nav-icon {
+    margin: 4px 0 -2px 0;
 }

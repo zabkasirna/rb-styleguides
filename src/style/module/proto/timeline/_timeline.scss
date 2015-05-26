@@ -45,15 +45,28 @@
 
     .card {
 
-        // width: 90%;
-        margin-left: 1.5rem;
-        overflow: visible;
+        // margin-left: 1.5rem;
+        // overflow: visible;
+        
+        // Into the light: RESET
+        margin: 0 0 1.5rem 0;
+        box-shadow: none;
+        background-color: $card-bg-color;
 
-        &:first-of-type {
-            margin-top: 0;
+        .card-content {
+            padding: 1rem 0;
+
+            &.no-pad-bottom { padding-bottom: 0; }
         }
 
-        .card-content.no-pad-bottom { padding-bottom: 0; }
+        .card-action {
+            padding: 0 0 1rem 0;
+            border-top: none;
+            border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+            // text-align: right;
+            
+            a { margin-right: .5rem; }
+        }
 
         .card-content-title {
             margin: 0 0 1rem 0;
@@ -87,12 +100,16 @@
         }
 
         .card-content-summary {
-            letter-spacing: -0.010em;
+            letter-spacing: 0.005em;
             font-size: 15px;
         }
 
         &:last-of-type {
-            margin-bottom: 5rem;
+            margin-bottom: 2rem;
+
+            .card-action {
+                border-bottom: none;
+            }
         }
 
         &:after {
