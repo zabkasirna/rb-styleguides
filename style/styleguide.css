@@ -448,6 +448,24 @@ td, th {
   font-weight: normal; }
 
 @font-face {
+  font-family: 'SansLight';
+  src: url('font/Neue Haas Grotesk Display W02 Lt.eot');
+  /* IE9 Compat Modes */
+  src: url('font/Neue Haas Grotesk Display W02 Lt.eot?#iefix') format('embedded-opentype'), url('font/Neue Haas Grotesk Display W02 Lt.woff') format('woff'), url('font/Neue Haas Grotesk Display W02 Lt.ttf') format('truetype'), url('font/Neue Haas Grotesk Display W02 Lt.svg') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'SansLightItalic';
+  src: url('font/Neue Haas Grotesk Display W02 Lt It.eot');
+  /* IE9 Compat Modes */
+  src: url('font/Neue Haas Grotesk Display W02 Lt It.eot?#iefix') format('embedded-opentype'), url('font/Neue Haas Grotesk Display W02 Lt It.woff') format('woff'), url('font/Neue Haas Grotesk Display W02 Lt It.ttf') format('truetype'), url('font/Neue Haas Grotesk Display W02 Lt It.svg') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
   font-family: 'IconFont';
   src: url('font/FontAwesome Regular.eot');
   /* IE9 Compat Modes */
@@ -6350,7 +6368,7 @@ nav {
 
 /*! Typebase.scss v0.1.0 | MIT License */
 html {
-  font-family: SansRegular, serif;
+  font-family: SansLight, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 100%;
   color: #251c18;
   -webkit-font-smoothing: antialiased;
@@ -6448,16 +6466,16 @@ code {
   padding: 1rem;
   margin: 1rem 0 2rem 0;
   border-radius: 2px;
-  background-color: #fff; }
+  background-color: #FCFCFC; }
 
 .card {
   position: relative;
   overflow: hidden;
   margin: 1rem 0 2rem 0;
-  background-color: #fff;
+  background-color: #FCFCFC;
   border-radius: 0; }
   .card .card-title {
-    color: #fff;
+    color: #FCFCFC;
     font-size: 24px;
     font-weight: 300; }
     .card .card-title.activator {
@@ -6531,7 +6549,7 @@ code {
   .card .card-reveal {
     padding: 1rem;
     position: absolute;
-    background-color: #fff;
+    background-color: #FCFCFC;
     width: 100%;
     overflow-y: auto;
     top: 100%;

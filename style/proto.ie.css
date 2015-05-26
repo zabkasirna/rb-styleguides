@@ -448,6 +448,24 @@ td, th {
   font-weight: normal; }
 
 @font-face {
+  font-family: 'SansLight';
+  src: url('font/Neue Haas Grotesk Display W02 Lt.eot');
+  /* IE9 Compat Modes */
+  src: url('font/Neue Haas Grotesk Display W02 Lt.eot?#iefix') format('embedded-opentype'), url('font/Neue Haas Grotesk Display W02 Lt.woff') format('woff'), url('font/Neue Haas Grotesk Display W02 Lt.ttf') format('truetype'), url('font/Neue Haas Grotesk Display W02 Lt.svg') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'SansLightItalic';
+  src: url('font/Neue Haas Grotesk Display W02 Lt It.eot');
+  /* IE9 Compat Modes */
+  src: url('font/Neue Haas Grotesk Display W02 Lt It.eot?#iefix') format('embedded-opentype'), url('font/Neue Haas Grotesk Display W02 Lt It.woff') format('woff'), url('font/Neue Haas Grotesk Display W02 Lt It.ttf') format('truetype'), url('font/Neue Haas Grotesk Display W02 Lt It.svg') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
   font-family: 'IconFont';
   src: url('font/FontAwesome Regular.eot');
   /* IE9 Compat Modes */
@@ -6350,7 +6368,7 @@ nav {
 
 /*! Typebase.scss v0.1.0 | MIT License */
 html {
-  font-family: SansRegular, serif;
+  font-family: SansLight, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 100%;
   color: #251c18;
   -webkit-font-smoothing: antialiased;
@@ -6448,16 +6466,16 @@ code {
   padding: 1rem;
   margin: 1rem 0 2rem 0;
   border-radius: 2px;
-  background-color: #fff; }
+  background-color: #FCFCFC; }
 
 .card {
   position: relative;
   overflow: hidden;
   margin: 1rem 0 2rem 0;
-  background-color: #fff;
+  background-color: #FCFCFC;
   border-radius: 0; }
   .card .card-title {
-    color: #fff;
+    color: #FCFCFC;
     font-size: 24px;
     font-weight: 300; }
     .card .card-title.activator {
@@ -6531,7 +6549,7 @@ code {
   .card .card-reveal {
     padding: 1rem;
     position: absolute;
-    background-color: #fff;
+    background-color: #FCFCFC;
     width: 100%;
     overflow-y: auto;
     top: 100%;
@@ -9063,7 +9081,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 /* ------ {{ materialize }} ------ */
 #user-dashboard .user-dashboard-topnav, #single-content .user-dashboard-topnav {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.05);
   background-color: #FFF;
   -webkit-transition: .2s top ease-out;
   -moz-transition: .2s top ease-out;
@@ -9074,22 +9092,27 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     padding: 0; }
   #user-dashboard .user-dashboard-topnav a, #single-content .user-dashboard-topnav a {
     color: #4a3930;
-    font-size: 13px; }
-    @media only screen and (max-width : 992px) {
-      #user-dashboard .user-dashboard-topnav a, #single-content .user-dashboard-topnav a {
-        padding: 1rem 0; } }
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    padding: 0; }
+    #user-dashboard .user-dashboard-topnav a:before, #user-dashboard .user-dashboard-topnav a:after, #single-content .user-dashboard-topnav a:before, #single-content .user-dashboard-topnav a:after {
+      content: " ";
+      display: table; }
+    #user-dashboard .user-dashboard-topnav a:after, #single-content .user-dashboard-topnav a:after {
+      clear: both; }
   #user-dashboard .user-dashboard-topnav .top-nav a.active, #single-content .user-dashboard-topnav .top-nav a.active {
-    border-bottom: 2px solid #947160;
-    padding-bottom: 13px; }
+    border-top: 2px solid #947160; }
   #user-dashboard .user-dashboard-topnav .side-nav a, #single-content .user-dashboard-topnav .side-nav a {
     display: block;
     padding: 0 1rem; }
   #user-dashboard .user-dashboard-topnav .side-nav-toggler-outer, #single-content .user-dashboard-topnav .side-nav-toggler-outer {
     width: 2.5rem; }
 #user-dashboard main, #single-content main {
-  background-color: #f7f4f2;
+  background-color: #FCFCFC;
   min-height: 100vh;
-  padding-top: 4.5rem; }
+  padding-top: 1rem; }
 #user-dashboard .page-footer, #single-content .page-footer {
   margin-top: 0;
   background-color: #372a24; }
@@ -9130,12 +9153,19 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .timeline .card-col {
   padding: 0 1rem; }
 .timeline .card {
-  margin-left: 1.5rem;
-  overflow: visible; }
-  .timeline .card:first-of-type {
-    margin-top: 0; }
-  .timeline .card .card-content.no-pad-bottom {
-    padding-bottom: 0; }
+  margin: 0 0 1.5rem 0;
+  box-shadow: none;
+  background-color: #FCFCFC; }
+  .timeline .card .card-content {
+    padding: 1rem 0; }
+    .timeline .card .card-content.no-pad-bottom {
+      padding-bottom: 0; }
+  .timeline .card .card-action {
+    padding: 0 0 1rem 0;
+    border-top: none;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2); }
+    .timeline .card .card-action a {
+      margin-right: .5rem; }
   .timeline .card .card-content-title {
     margin: 0 0 1rem 0; }
   .timeline .card .card-content-meta {
@@ -9154,10 +9184,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     .timeline .card .card-content-meta .meta-timeago:after {
       content: ' \2022'; }
   .timeline .card .card-content-summary {
-    letter-spacing: -0.01em;
+    letter-spacing: 0.005em;
     font-size: 15px; }
   .timeline .card:last-of-type {
-    margin-bottom: 5rem; }
+    margin-bottom: 2rem; }
+    .timeline .card:last-of-type .card-action {
+      border-bottom: none; }
   .timeline .card:after {
     content: ' ';
     position: absolute;
@@ -9229,7 +9261,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .navbar-fixed {
   position: fixed;
-  min-width: 100%; }
+  min-width: 100%;
+  bottom: 0; }
 
 .navbar-animated {
   -webkit-animation-duration: .5s;
@@ -9252,6 +9285,16 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -moz-animation-name: navbarSlideUp;
   -o-animation-name: navbarSlideUp;
   animation-name: navbarSlideUp; }
+
+.nav-text, .nav-icon {
+  display: block;
+  width: 100%;
+  line-height: 1.5rem;
+  height: 1.5rem;
+  text-align: center; }
+
+.nav-icon {
+  margin: 4px 0 -2px 0; }
 
 #single-content {
   position: relative;
@@ -9329,7 +9372,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
         line-height: 100%;
         font-size: 14px; }
 .content-outer .content-body {
-  margin-top: 90vh;
+  margin-top: 100vh;
   padding: 0 1rem 5rem 1rem;
   font-size: 15px; }
   .content-outer .content-body * {
