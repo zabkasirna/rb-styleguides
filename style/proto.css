@@ -9323,7 +9323,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     .content-outer .content-cover-outer .content-meta-outer > * {
       float: left; }
   .content-outer .content-cover-outer .content-cover-image {
-    background: url(../asset/image/sample-1.jpg) no-repeat center center fixed;
+    background: url(../asset/image/tomorrowland.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
