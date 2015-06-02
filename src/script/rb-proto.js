@@ -14,6 +14,9 @@
  *                                                          
  */
 
+ var Nav = require('./proto/Nav')
+ ;
+
 (function( $ ) {
     
     // $( function() {
@@ -22,21 +25,9 @@
     
     $(function() {
 
-        // $('.side-nav-toggler').sideNav();
+        Nav.init();
 
-        $('.navbar-fixed .main-nav-outer')
-            .headroom({
-                "offset": 80,
-                "tolerance": 5,
-                "classes": {
-                    "initial": "navbar-animated",
-                    "pinned": "navbar-slide-down",
-                    "unpinned": "navbar-slide-up",
-                    "top": "navbar-on-top",
-                    "notTop": "navbar-not-top"
-                }
-            })
-        ;
+        // $('.side-nav-toggler').sideNav();
     });
 
 })(jQuery);

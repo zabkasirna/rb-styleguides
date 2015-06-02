@@ -26,8 +26,8 @@ $button-line-height: $button-height !default;
 /*** Cards ***/
 $card-padding: 1rem !default;
 $card-bg-color: #FAF7F4 !default;
-$card-link-color: color("rb-primer", "lighten-2") !default;
-$card-link-color-light: lighten($card-link-color, 20%) !default;
+$card-link-color: color("rb-primer", "darken-1") !default;
+$card-link-color-light: lighten($card-link-color, 50%) !default;
 
 /*** Collapsible ***/
 $collapsible-height: 3rem !default;

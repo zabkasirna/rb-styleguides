@@ -58,11 +58,58 @@
         }
 
         .card-action {
-            padding: 0 0 1rem 0;
+
+            @include clearfix;
+
+            padding: 0;
             border-top: none;
-            border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+            margin-bottom: .5rem;
             
-            a { margin-right: .5rem; }
+            .card-action-link {
+                display: inline-block;
+                position: relative;
+                float: left;
+
+                height: 1.5rem;
+                width: 50%;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    border: 1px solid $card-link-color-light;
+                }
+
+                &:first-of-type:after {
+                    right: 2px;
+                    left: 0;
+                }
+
+                &:last-of-type:after {
+                    left: 2px;
+                    right: 0;
+                }
+
+                margin: 0;
+                padding: 0 1em;
+
+                color: $card-link-color;
+                font-size: 11px;
+                line-height: 1.5rem;
+                text-align: center;
+
+                .icon {
+                    margin-right: 1em;
+                }
+
+                .text {
+                    letter-spacing: 0.03em;
+                    text-transform: capitalize;
+                }
+            }
+
         }
 
         .card-content-title {

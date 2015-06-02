@@ -34,7 +34,8 @@
     "prism": "*",
     "jquery-timeago": "~1.4.1",
     "waypoints": "~3.1.1",
-    "headroom.js": "~0.7.0"
+    "headroom.js": "~0.7.0",
+    "formstone": "~0.6.3"
   },
   "overrides": {
     "modernizr": {
