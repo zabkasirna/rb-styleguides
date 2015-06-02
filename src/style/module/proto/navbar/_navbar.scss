@@ -76,6 +76,8 @@
 
             @include transition( background-color .2s ease-out );
 
+            pointer-events: none;
+
             display: none;
 
             content: "";
@@ -105,6 +107,7 @@
             &:before {
                 @include transition( background-color .2s ease-out );
                 background-color: rgba( color( 'rb-primer', 'darken-3' ), .5 );
+                pointer-events: initial;
             }
         }
 
