@@ -6466,16 +6466,16 @@ code {
   padding: 1rem;
   margin: 1rem 0 2rem 0;
   border-radius: 2px;
-  background-color: #FCFCFC; }
+  background-color: #FAF7F4; }
 
 .card {
   position: relative;
   overflow: hidden;
   margin: 1rem 0 2rem 0;
-  background-color: #FCFCFC;
+  background-color: #FAF7F4;
   border-radius: 0; }
   .card .card-title {
-    color: #FCFCFC;
+    color: #FAF7F4;
     font-size: 24px;
     font-weight: 300; }
     .card .card-title.activator {
@@ -6549,7 +6549,7 @@ code {
   .card .card-reveal {
     padding: 1rem;
     position: absolute;
-    background-color: #FCFCFC;
+    background-color: #FAF7F4;
     width: 100%;
     overflow-y: auto;
     top: 100%;
