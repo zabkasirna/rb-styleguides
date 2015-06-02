@@ -22,20 +22,21 @@
     
     $(function() {
 
-        $('.side-nav-toggler').sideNav();
+        // $('.side-nav-toggler').sideNav();
 
-        // $('header.navbar-fixed')
-        //     .headroom({
-        //         "offset": 80,
-        //         "tolerance": 5,
-        //         "classes": {
-        //             "initial": "navbar-animated",
-        //             "pinned": "navbar-slide-down",
-        //             "unpinned": "navbar-slide-up",
-        //             "top": "navbar-on-top",
-        //             "notTop": "navbar-not-top"
-        //         }
-        //     });
+        $('.navbar-fixed .main-nav-outer')
+            .headroom({
+                "offset": 80,
+                "tolerance": 5,
+                "classes": {
+                    "initial": "navbar-animated",
+                    "pinned": "navbar-slide-down",
+                    "unpinned": "navbar-slide-up",
+                    "top": "navbar-on-top",
+                    "notTop": "navbar-not-top"
+                }
+            })
+        ;
     });
 
 })(jQuery);

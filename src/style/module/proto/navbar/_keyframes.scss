@@ -1,0 +1,61 @@
+/* Keyframes for NAVBAR */
+
+@-webkit-keyframes navbarSlideDown {
+    0% { -webkit-transform: translateY(100%); }
+    100% { -webkit-transform: translateY(0); }
+}
+
+@-moz-keyframes navbarSlideDown {
+    0% { -moz-transform: translateY(100%); }
+    100% { -moz-transform: translateY(0); }
+}
+
+@-o-keyframes navbarSlideDown {
+    0% { -o-transform: translateY(100%); }
+    100% { -o-transform: translateY(0); }
+}
+
+@keyframes navbarSlideDown {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+@-webkit-keyframes navbarSlideUp {
+    0% { -webkit-transform: translateY(0); }
+    100% { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes navbarSlideUp {
+    0% { -moz-transform: translateY(0); }
+    100% { -moz-transform: translateY(100%); }
+}
+@-o-keyframes navbarSlideUp {
+    0% { -o-transform: translateY(0); }
+    100% { -o-transform: translateY(100%); }
+}
+@keyframes navbarSlideUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100%); }
+}
+
+.navbar-animated {
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.navbar-animated.navbar-slide-down {
+    -webkit-animation-name: navbarSlideDown;
+    -moz-animation-name: navbarSlideDown;
+    -o-animation-name: navbarSlideDown;
+    animation-name: navbarSlideDown;
+}
+.navbar-animated.navbar-slide-up {
+    -webkit-animation-name: navbarSlideUp;
+    -moz-animation-name: navbarSlideUp;
+    -o-animation-name: navbarSlideUp;
+    animation-name: navbarSlideUp;
+}
