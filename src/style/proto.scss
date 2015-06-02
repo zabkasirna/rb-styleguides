@@ -19,6 +19,9 @@
 @import "materialize/materialize";
 
 /* ------ {{ materialize }} ------ */
+@import "formstone/formstone";
+
+/* ------ {{ non-global }} ------ */
 @import "module/proto/page/user-dashboard";
 @import "module/proto/timeline/timeline";
 @import "module/proto/navbar/navbar";

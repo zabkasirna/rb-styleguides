@@ -15,6 +15,7 @@
  */
 
  var Nav = require('./proto/Nav')
+ ,   Content = require('./proto/Content')
  ;
 
 (function( $ ) {
@@ -26,6 +27,7 @@
     $(function() {
 
         Nav.init();
+        Content.initCoverImage();
 
         // $('.side-nav-toggler').sideNav();
     });
