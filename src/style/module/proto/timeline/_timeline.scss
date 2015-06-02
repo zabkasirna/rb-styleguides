@@ -57,6 +57,7 @@
             padding: 1rem 0;
 
             &.no-pad-bottom { padding-bottom: 0; }
+            &.no-pad { padding: 0; }
         }
 
         .card-action {
@@ -70,6 +71,8 @@
 
         .card-content-title {
             margin: 0 0 1rem 0;
+
+            a { color: inherit; }
         }
 
         .card-content-meta {
