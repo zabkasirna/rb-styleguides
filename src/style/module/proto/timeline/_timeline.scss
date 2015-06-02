@@ -45,9 +45,6 @@
 
     .card {
 
-        // margin-left: 1.5rem;
-        // overflow: visible;
-        
         // Into the light: RESET
         margin: 0 0 1.5rem 0;
         box-shadow: none;
@@ -64,7 +61,6 @@
             padding: 0 0 1rem 0;
             border-top: none;
             border-bottom: 1px solid rgba(160, 160, 160, 0.2);
-            // text-align: right;
             
             a { margin-right: .5rem; }
         }
@@ -108,7 +104,7 @@
         }
 
         &:last-of-type {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
 
             .card-action {
                 border-bottom: none;

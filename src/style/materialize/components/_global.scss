@@ -284,14 +284,14 @@ footer.page-footer {
   // padding-top: 24px;
   background-color: $footer-bg-color;
 
-  .footer-copyright {
-    overflow: hidden;
-    height: 48px;
-    line-height: 48px;
-    color: rgba(255,255,255,.8);
-    // background-color: rgba(51,51,51,.08);
-    @extend .light;
-  }
+  // .footer-copyright {
+  //   overflow: hidden;
+  //   height: 48px;
+  //   line-height: 48px;
+  //   color: rgba(255,255,255,.8);
+  //   background-color: rgba(51,51,51,.08);
+  //   @extend .light;
+  // }
 }
 
 // Tables

@@ -11,11 +11,16 @@
 
     .page-footer {
         margin-top: 0;
+        padding: 1rem 0;
         background-color: color('rb-primer', 'darken-3');
 
         .footer-copyright {
             font-size: 12px;
-            text-align: right;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FFF;
+
+            p { margin: 0; }
         }
     }
 }
